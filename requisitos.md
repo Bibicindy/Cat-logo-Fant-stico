@@ -30,12 +30,12 @@ impedir o envio de formulários com campos obrigatórios vazios ou dados incorre
 O usuário pode definir se outros podem visualizar, editar, excluir ou administrar suas listas, ou por meio de convites ou acesso público.
 
 - Privacidade de dados:
-Coletas somente de dados necessários, como para o login, e com a permissão do usuário usar dados de pesquisas anteriores para recomendações, além de respeitar a LGPD, 
+Coletas somente de dados necessários, como para o login, e com a permissão do usuário usar dados de pesquisas anteriores para recomendações, além de respeitar a LGPD. 
 
 - Navegação: 
 garantir que os menus, botões e links funcionem como devem.
 
-- Tratamento de erros: informar ao usuário quando uma ação não puder ser concluída e oferecer um espaço para o público avaliar o site e o que a plataforma pode melhorar
+- Tratamento de erros: informar ao usuário quando uma ação não puder ser concluída e oferecer um espaço para o público avaliar o site e o que a plataforma pode melhorar.
 
 - Disponibilidade: estabelecer como o site deve funcionar e como lidar com falhas técnicas.
 
