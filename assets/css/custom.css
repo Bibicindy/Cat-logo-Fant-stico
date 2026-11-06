@@ -1,0 +1,188 @@
+/* Estilização Customizada - Catálogo Fantástico */
+/* Estilo Quarteto Fantástico: Azul Cósmico (#0ea5e9 / #38bdf8) & Laranja Flamejante (#f97316 / #ff6b00) */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Rajdhani:wght@500;600;700&family=Orbitron:wght@600;700;800;900&display=swap');
+
+:root {
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --font-fantastic: 'Orbitron', 'Rajdhani', sans-serif;
+    --f4-blue: #0ea5e9;
+    --f4-blue-light: #38bdf8;
+    --f4-blue-glow: rgba(14, 165, 233, 0.35);
+    --f4-orange: #f97316;
+    --f4-orange-light: #fb923c;
+    --f4-orange-glow: rgba(249, 115, 22, 0.45);
+    --bg-cosmic: #070c18;
+    --card-cosmic: #0d172e;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-cosmic);
+    color: #f1f5f9;
+    overflow-x: hidden;
+    background-image: 
+        radial-gradient(circle at 15% 15%, rgba(14, 165, 233, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 20%, rgba(249, 115, 22, 0.10) 0%, transparent 35%),
+        radial-gradient(circle at 50% 80%, rgba(14, 165, 233, 0.08) 0%, transparent 50%);
+    background-attachment: fixed;
+}
+
+h1, h2, h3, .font-fantastic, .font-title {
+    font-family: var(--font-fantastic);
+    letter-spacing: 0.04em;
+}
+
+/* Custom Scrollbar Quarteto Fantástico */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #070c18;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #0ea5e9 0%, #f97316 100%);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #38bdf8 0%, #fb923c 100%);
+}
+
+/* Emblema do Quarteto Fantástico */
+.emblema-f4 {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: radial-gradient(circle, #0284c7 0%, #034870 70%, #081a2e 100%);
+    border: 2px solid #38bdf8;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.6), inset 0 0 10px rgba(249, 115, 22, 0.5);
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+}
+
+.emblema-f4::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    border: 1px dashed rgba(249, 115, 22, 0.7);
+    animation: rotateSlow 20s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes rotateSlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Glow e Bordas Temáticas */
+.border-f4-glow {
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.15);
+}
+.border-f4-glow:hover {
+    border-color: rgba(249, 115, 22, 0.6);
+    box-shadow: 0 0 25px rgba(249, 115, 22, 0.25);
+}
+
+.glow-blue {
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.4);
+}
+.glow-orange {
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.4);
+}
+
+/* Streaming Badges Colors com Redirecionamento */
+.badge-disney {
+    background: linear-gradient(135deg, #071f49 0%, #0063e5 100%);
+    color: #ffffff;
+    border: 1px solid #3b82f6;
+}
+.badge-disney:hover {
+    background: linear-gradient(135deg, #092c6b 0%, #1d74f2 100%);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
+
+.badge-netflix {
+    background: linear-gradient(135deg, #3d0707 0%, #e50914 100%);
+    color: #ffffff;
+    border: 1px solid #ef4444;
+}
+.badge-netflix:hover {
+    background: linear-gradient(135deg, #590909 0%, #f41e29 100%);
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.5);
+}
+
+.badge-max {
+    background: linear-gradient(135deg, #0a1128 0%, #002be7 100%);
+    color: #ffffff;
+    border: 1px solid #38bdf8;
+}
+.badge-max:hover {
+    background: linear-gradient(135deg, #0e1b3d 0%, #1e45f5 100%);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+}
+
+.badge-prime {
+    background: linear-gradient(135deg, #031c2b 0%, #00a8e1 100%);
+    color: #ffffff;
+    border: 1px solid #0ea5e9;
+}
+.badge-prime:hover {
+    background: linear-gradient(135deg, #052b42 0%, #16bdf5 100%);
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.5);
+}
+
+.badge-apple {
+    background: linear-gradient(135deg, #18181b 0%, #3f3f46 100%);
+    color: #ffffff;
+    border: 1px solid #71717a;
+}
+.badge-apple:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Classificação Indicativa Oficial */
+.etaria-livre { background-color: #16a34a; color: #ffffff; font-weight: 800; }
+.etaria-10 { background-color: #0284c7; color: #ffffff; font-weight: 800; }
+.etaria-12 { background-color: #ca8a04; color: #ffffff; font-weight: 800; }
+.etaria-14 { background-color: #ea580c; color: #ffffff; font-weight: 800; }
+.etaria-16 { background-color: #dc2626; color: #ffffff; font-weight: 800; }
+.etaria-18 { background-color: #000000; color: #ffffff; border: 1px solid #ef4444; font-weight: 800; }
+
+/* Animações */
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-down {
+    animation: slideDown 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 15px rgba(14, 165, 233, 0.4); }
+    50% { box-shadow: 0 0 25px rgba(249, 115, 22, 0.6); }
+}
+
+.pulse-f4 {
+    animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Glassmorphism Quarteto Fantástico */
+.glass-panel {
+    background: rgba(13, 23, 46, 0.75);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+.glass-header {
+    background: rgba(7, 12, 24, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(56, 189, 248, 0.18);
+}
